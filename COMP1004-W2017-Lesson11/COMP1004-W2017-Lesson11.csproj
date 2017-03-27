@@ -68,10 +68,17 @@
     <Compile Include="DataForm.Designer.cs">
       <DependentUpon>DataForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileForm.Designer.cs">
+      <DependentUpon>FileForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\SchoolContext.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="NamesContext.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
@@ -83,6 +90,9 @@
     <EmbeddedResource Include="DataForm.resx">
       <DependentUpon>DataForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FileForm.resx">
+      <DependentUpon>FileForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -92,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\COMP1004-W2017-Lesson8.exe.config" />
+    <None Include="bin\Debug\COMP1004-W2017-Lesson8.vshost.exe.config" />
+    <None Include="bin\Debug\COMP1004-W2017-Lesson8.vshost.exe.manifest" />
     <None Include="comp1004namesDataSet.xsc">
       <DependentUpon>comp1004namesDataSet.xsd</DependentUpon>
     </None>
@@ -127,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\COMP1004-W2017-Lesson8.vshost.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

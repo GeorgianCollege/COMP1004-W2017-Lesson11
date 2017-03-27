@@ -16,7 +16,7 @@ namespace COMP1004_W2017_Lesson11
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DataForm());
+            Application.Run(new FileForm());
         }
     }
 }
